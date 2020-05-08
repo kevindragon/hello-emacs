@@ -6,6 +6,8 @@
 * 配置.emacs
   #+BEGIN_SRC emacs-lisp
     (setq sql-mysql-options '("-C" "-f" "-t" "-n")) ; for windows
+    ;; 如果默认使用utf8添加参数: --default-character-set=utf8
+    ;; 可以使用 mysql --help 查看所有支持的选项列表
     (setq sql-user "root")
     (setq sql-password "")
   #+END_SRC
